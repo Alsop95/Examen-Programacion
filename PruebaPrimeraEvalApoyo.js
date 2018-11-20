@@ -14,8 +14,10 @@ function gettiempo(newtiempo,con) {
 function salir(salida) {
   if (salida=="si") {
     salida="si"
-  }else {
+  }else if (salida=="no") {
     salida="no"
+  }else {
+    alert("valor introducido no valido, introduzca 'si' o no")
   }
 }
 function resultadoM(time) {
@@ -42,17 +44,12 @@ function mediaV(time) {
   }
 }
 
-
-
-
 var time=[ ]
 var mejorRes=1000;
 var peorRes=0;
 var tiempoMedio=0;
 var newtiempo=0;
 var salida=0
-
-
 
 while (salida!="si") {
 
